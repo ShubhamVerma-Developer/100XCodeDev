@@ -16,8 +16,8 @@
 // console.log(arr1.concat(arr2));
 
 // //----forEach()------
-const arr1 = [1, 2, 3];
-const arr2 = [4, 5, 6];
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
 
 // for(let i=0; i<arr1.length; i++){
 //   console.log(arr1[i]);
