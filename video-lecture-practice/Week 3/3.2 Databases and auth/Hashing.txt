@@ -1,0 +1,12 @@
+Hash password 
+ multiple reasons 
+
+ a single input always give the same output
+
+
+ hashing is 1 way
+
+ 1. Hashing is one way
+ 2. Given the output, no one can find out the input
+ 3. Changing the input a lil bit changes the output by a lot
+ 

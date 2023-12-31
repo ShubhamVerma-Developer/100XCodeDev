@@ -9,13 +9,31 @@
     <input type="text" id="username" placeholder="Enter username here" /></br></br>
     <input type="password" id="password" placeholder="Enter password here" /><br/><br/>
     <button onclick="login()">Login</button>
+    <div id="data">
+
+    </div>
 
     <script>
-      const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
       function login() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
         console.log("username :" + username);
         console.log("password : " + password);
+
+        if(username==='shubham' && password==='12345'){
+          showData();
+        }
+        else{
+          alert("something went wrong");
+        }
+      }
+
+     async function showData(){
+        const response = await fetch("https://fakerapi.it/api/v1/persons");
+        jsonData = await response.json();
+        console.log(jsonData);
+        const data = document.getElementById("data");
+        data.innerHTML = JSON.stringify(jsonData);
       }
     </script>
   </body>
