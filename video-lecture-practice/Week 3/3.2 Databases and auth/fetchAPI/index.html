@@ -7,14 +7,26 @@
   </head>
   <body>
     <script>
-      function getAnimalData() {
-        fetch("https://fakestoreapi.com/products").then(function (response) {
-          response.json().then(function (finalData) {
-            console.log;
-          });
-        });
+      // function getAnimalData() {
+      //   fetch("https://fakerapi.it/api/v1/persons").then(function (response) {
+      //     response.json().then(function (finalData) {
+      //       console.log(finalData);
+      //     });
+      //   });
+      // }
+
+      async function getAnimalData() {
+        const response = await fetch("https://fakerapi.it/api/v1/persons");
+        const jsonData = await response.json();
+        document.getElementById("container").innerHTML = JSON.stringify(
+          jsonData.data
+        );
       }
     </script>
+    <div id="container"></div>
     <button onclick="getAnimalData()">Get animal data</button>
   </body>
 </html>
+
+<!-- // Project for today - Let people sign up to your website Only allow signed in users  -->
+<!-- to see people (create a dummy people list) -->

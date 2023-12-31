@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication</title>
+  </head>
+  <br>
+    <input type="text" id="username" placeholder="Enter username here" /></br></br>
+    <input type="password" id="password" placeholder="Enter password here" /><br/><br/>
+    <button onclick="login()">Login</button>
+
+    <script>
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      function login() {
+        console.log("username :" + username);
+        console.log("password : " + password);
+      }
+    </script>
+  </body>
+</html>
