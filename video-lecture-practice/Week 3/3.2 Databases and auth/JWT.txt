@@ -1,0 +1,5 @@
+Json web token
+
+1. Its neither of encryption or hashing (its technically a digital signature)
+2. Anyone can see the original output given the signature 
+3. Signature can be varified only using the password

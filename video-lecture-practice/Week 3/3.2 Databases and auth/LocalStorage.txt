@@ -1,0 +1,5 @@
+A place in your browser where you can store some data usually things that are 
+stored include -
+1. Authentication tokens
+2. User language preference 
+3. User theme preference

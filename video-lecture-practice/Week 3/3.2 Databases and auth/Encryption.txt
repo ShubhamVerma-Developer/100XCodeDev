@@ -1,0 +1,5 @@
+Encryption are two ways
+
+1. Encryption is two way
+2. A string is encrypted using a password
+3. String can be decrypted using the same password
