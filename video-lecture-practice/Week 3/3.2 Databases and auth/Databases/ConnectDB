@@ -1,0 +1,5 @@
+How does the backend connect to the database using libraries!
+
+1. Express lets you create an HTTP server
+2. Jsonwebtokens library lets you create jets
+3. Mongoose lets you connect to your database
