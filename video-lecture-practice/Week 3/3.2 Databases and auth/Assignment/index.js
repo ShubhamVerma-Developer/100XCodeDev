@@ -60,27 +60,24 @@ app.post("/signin", function (req, res) {
 });
 
 app.get("/users", function (req, res) {
+  jwtPassword = "shhhhh";
   const token = req.headers.authorization;
   console.log(token);
-  // try {
-  //   const decoded = jwt.verify(token, jwtPassword);
-  //   console.log(decoded);
-  //   const username = decoded.username;
-  //   console.log(username);
-  //   // return a list of users other than this username
-  // } catch (err) {
-  //   return res.status(403).json({
-  //     msg: "Invalid token",
-  //   });
-  res.json({
-    users: ALL_USERS.filter(function (value) {
-      if (value.username == username) {
-        return false;
-      } else {
-        return true;
-      }
-    }),
-  });
+  try {
+    const decoded = jwt.verify(token, jwtPassword);
+    console.log(decoded);
+    const username = decoded.username;
+    console.log(username);
+    // return a list of users other than this username
+  } catch (err) {
+    return res.status(403).json({
+      msg: "Invalid token",
+    });
+
+    res.json({
+      users: ALL_USERS,
+    });
+  }
 });
 
 app.listen(3000);
