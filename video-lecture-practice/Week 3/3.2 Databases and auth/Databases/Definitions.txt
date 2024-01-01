@@ -1,0 +1,16 @@
+Databases
+In the real world, a basic architecture looks like this
+There are various types of Databases
+1. Graph DBs
+2. Vector DBs
+3. SQL DBs
+4. NoSql DBs
+
+MongoDB lets you create Databases
+In each DB, it lets you create tables (collections)
+In each table, it lest you dump JSON Databases
+It is schemaless
+It scales well and is a decent choice for most use cases.
+
+
+ 
