@@ -1,0 +1,25 @@
+React is just a easier way to write normal HTML/CSS/JS
+It's a new syntax, the under the hood gets converted to HTML/CSS/JS
+
+just how ChaGPT is an easier way to write code, React is a easier way to write HTML/CSS
+
+Why react
+People realised it's harder to do DOM manipulation the conventinal.
+
+Some react jargon
+To create a react app, you usually need to worry about two things
+Creators of frontend realised that all
+websites can effectively be divided into two parts
+
+State - An object that represents the current state of the app
+It represents the dynamic things in your app (things that change)
+For example, the value of the counter
+
+How a DOM element should render, given a state
+It is a re-usable, dynaic, HTML snippet that changes given the state
+
+State/Components/Re-rendering
+
+You usually have to define all your components once
+And then all you have to do is update the state
+of your app, React takes care of re-rendering your app
