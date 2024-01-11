@@ -1,13 +1,19 @@
 const express = require("express");
+const cors = require("cors");
 const { createTodo, updateTodo } = require("./types");
 const { todo } = require("./db");
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
-app.post("/todo", async function (req, res) {
+app.post("/todos", async function (req, res) {
+  console.log(req.body);
   const createPayload = req.body;
   const parsedPayload = createTodo.safeParse(createPayload);
+  console.log(createPayload);
+  if (!createPayload.title.length) {
+  }
   if (!parsedPayload.success) {
     res.status(411).json({
       msg: "You sent the wrong inputs",
@@ -28,7 +34,6 @@ app.post("/todo", async function (req, res) {
 
 app.get("/todos", async function (req, res) {
   const todos = await todo.find({});
-
   res.json({
     todos,
   });
@@ -56,4 +61,4 @@ app.put("/completed", async function (req, res) {
   });
 });
 
-app.listen(3000);
+app.listen(3005);
