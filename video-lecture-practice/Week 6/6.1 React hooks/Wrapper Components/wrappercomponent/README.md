@@ -1,8 +1,7 @@
-# React + Vite
+## Hooks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Until now, we're discussed useState
+These functions that start with use are called hooks
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Hooks in React are functions that allow you to "hook into"
+React state and lifecycle features from function components.

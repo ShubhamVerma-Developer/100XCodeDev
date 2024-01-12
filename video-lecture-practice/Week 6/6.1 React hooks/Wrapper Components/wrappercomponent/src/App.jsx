@@ -5,22 +5,27 @@ import './App.css'
 
 function App() {
   return <div>
-    <CardWrapper innerComponent={<TextComponent title="hello" />} />
-    <CardWrapper innerComponent={<TextComponent title="hello1" />} />
+    <CardWrapper>
+      <CardWrapper>
+    <TextComponent title="hii there"/>
+      </CardWrapper>
+    </CardWrapper>
+    <CardWrapper>
+      Hello there
+    </CardWrapper>
+
   </div>
 }
 
-  function CardWrapper({innerComponent}){
-    return (
-      <div style={{border: "2px solid black", padding: "20px"}}>{innerComponent}</div>
-    )
+  function CardWrapper({children}){
+    console.log(children);
+    return <div style={{border: "2px solid black", padding: "20px"}}>
+      {children}
+    </div>
 }
 
-function TextComponent({title}) {
-  return <div>
-    {title}
-  </div>
+function TextComponent({title}){
+  return <div>{title}</div>
 }
-
 
 export default App
