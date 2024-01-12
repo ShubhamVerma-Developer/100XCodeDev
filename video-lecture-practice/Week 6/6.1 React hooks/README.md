@@ -28,3 +28,9 @@ Lets create a simpel todo app that renders 3 todos
 2. Initialize a state array that has 3 todos
 3. Iterate over the array to render all the TODOs
 4. A button in the top level App component to add a new TODO
+
+## Wrapper components
+
+- Lets say you want to build this,
+  You will notice a lot of cards on the right look the same
+- You can create a wrapper Card component that takes the inner React component as an input
