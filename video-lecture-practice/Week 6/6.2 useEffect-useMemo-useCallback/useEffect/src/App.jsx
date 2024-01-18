@@ -11,33 +11,23 @@ function App() {
       <button onClick={() => { setTodoId(3) }}>3</button>
       <button onClick={() => { setTodoId(4) }}>4</button>
       <button onClick={() => { setTodoId(5) }}>5</button>
+      id is : {todoId}
       <Todo id={todoId} />
     </div>
   );
-}
-
-function FetchAllTodo(){
-  const [todos, setTodos] =  useState();
-  useEffect(() => {
-    axios.get("https://sum-server.100xdevs.com/todos")
-    .then(response => {
-      setTodos(response.data.todos);
-      console.log(todos);
-    })
-  }, [])
-  return todos.length;
 }
 
 function Todo({id}) {
   const [todo, setTodo] = useState({});
 
   useEffect(() => {
-    axios.get("https://sum-server.100xdevs.com/todo?id="+id)
-   .then(response => {
-    setTodo(response.data.todo)
-   })
+    setTimeout(()=>{
+      axios.get(`https://sum-server.100xdevs.com/todo?id=${id}`)
+     .then(response => {
+      setTodo(response.data.todo)
+     })
+    }, 5000)
   }, [id])
-
 
   return <div>
     <h1>{todo.id}</h1>
@@ -49,8 +39,5 @@ function Todo({id}) {
     </h4>
   </div>
 }
-
-
-
 
 export default App;
