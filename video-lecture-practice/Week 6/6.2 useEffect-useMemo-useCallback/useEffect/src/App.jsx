@@ -26,7 +26,7 @@ function Todo({id}) {
      .then(response => {
       setTodo(response.data.todo)
      })
-    }, 5000)
+    }, 1000)
   }, [id])
 
   return <div>
