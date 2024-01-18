@@ -46,3 +46,5 @@ Do you take the stop in b/w every lap? Or do you take a stop after every 10 laps
 You will only make a pit stop From time to time (Lets say once every 20 laps)
 even though you pass right in front of it in every lap
 Making a pit stop is a side effect.
+
+### Write a component that takes a todo id as an input and fetches the data from that todo from the given endpoint and then renders it. How would the dependency array change?
