@@ -9,3 +9,7 @@ If I ask you to create an app that does two things.
 2. Lets user put a value in an input box (n) and you need to show sum from 1-n.
 
    One restriction - everything needs to be inside App
+
+## useMemo
+
+useMemo will only recompute the memoized value when one of the deps has changed.
