@@ -1,0 +1,2 @@
+- useCallback is not abut minimizing the amount of code that is run
+- useCallback is about not rendering a child component, if the function hasn't/doesnt need to change across renders.

@@ -19,7 +19,8 @@ function App() {
       setExchangeData({
         returns: 100
       });
-    }, 1000);
+    }, 1000);3
+    
   }, []);
 
   const incomeTax = (bankData.income + exchangeData) * 0.3;
