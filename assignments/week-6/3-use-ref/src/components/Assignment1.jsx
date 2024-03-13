@@ -5,13 +5,13 @@ import { useEffect, useRef } from "react";
 export function Assignment1() {
 
     useEffect(() => {
-
+        input.current.focus();
     }, []);
 
     const input = useRef();
 
     const handleButtonClick = () => {
-       setTimeout(() => input.current.focus(), 100);
+      input.current.focus();
 
     };
 
